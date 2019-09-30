@@ -87,7 +87,7 @@ export default class ModalPicker extends Component {
                     </ScrollView>
                 </View>
                 <View style={styles.cancelContainer}>
-                    <TouchableOpacity onPress={this.close}>
+                    <TouchableOpacity onPress={this.props.onCancel}>
                         <View style={[styles.cancelStyle, this.props.cancelStyle]}>
                             <Text
                                 style={[styles.cancelTextStyle, this.props.cancelTextStyle]}>{this.props.cancelText}</Text>
